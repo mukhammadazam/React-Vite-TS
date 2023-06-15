@@ -1,0 +1,14 @@
+.nav {
+  padding: 38px 0;
+  &__list {
+    gap: 30px;
+  }
+  &__link {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22262a;
+  }
+}
