@@ -1,5 +1,7 @@
 .nav {
   padding: 38px 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
   &__list {
     gap: 30px;
   }
@@ -10,5 +12,24 @@
     font-size: 18px;
     line-height: 27px;
     color: #22262a;
+  }
+  &__logos {
+    display: flex;
+}
+&__mobileLogos {
+    display: none;
+  }
+  &__togle{
+    top: 100px;
+  }
+  }
+@media screen and (max-width: 430px) {
+  .nav {
+    &__logos {
+      display: none;
+    }
+    &__mobileLogos {
+      display: flex;
+    }
   }
 }
