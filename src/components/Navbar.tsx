@@ -12,9 +12,9 @@ const Navbar = () => {
     return setTogle(!togle);
   };
   return (
-    <NavbarBs>
+    <NavbarBs className="navBs" sticky="top">
       <Container>
-        <Nav className='nav d-flex align-items-center justify-content-between w-100'>
+        <Nav  className='nav d-flex align-items-center justify-content-between w-100'>
           <div className='nav__logo'>
             <NavLink to='/'>
               <img src={logo} alt='logo' width='164' height='42' />
@@ -56,7 +56,7 @@ const Navbar = () => {
             </div>
             <Button
               onClick={funcTogle}
-              className='bg-white border-0 d-block d-xl-none'>
+              className='bg-white ms-3 border-0 d-block d-xl-none'>
               <RxHamburgerMenu className='text-dark fs-3 fw-bold fs-bold ' />
             </Button>
           </div>

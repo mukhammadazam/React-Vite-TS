@@ -7,11 +7,13 @@ import LookBook from "./pages/LookBook";
 import SHop from "./pages/SHop";
 import Fuatures from "./pages/Fuatures";
 import Pages from "./pages/Pages";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
       <Navbar />
+      <Hero/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Shop' element={<SHop />} />

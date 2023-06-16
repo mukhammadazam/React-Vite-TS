@@ -1,7 +1,10 @@
-.nav {
-  padding: 38px 0;
+.navBs {
   background: transparent;
   backdrop-filter: blur(10px);
+}
+.nav {
+  padding: 30px 0;
+
   &__list {
     gap: 30px;
   }
@@ -15,15 +18,15 @@
   }
   &__logos {
     display: flex;
-}
-&__mobileLogos {
+  }
+  &__mobileLogos {
     display: none;
   }
-  &__togle{
+  &__togle {
     top: 100px;
   }
-  }
-@media screen and (max-width: 430px) {
+}
+@media screen and (max-width: 450px) {
   .nav {
     &__logos {
       display: none;
