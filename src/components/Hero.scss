@@ -4,4 +4,55 @@
   background-size: center;
   background-position: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-inner {
+  position: absolute;
+  bottom: 50px;
+  right: 231px;
+  &__leni {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22262a;
+  }
+  &__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120px;
+    color: #22262a;
+  }
+  &__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22262a;
+  }
+  &__btn1 {
+    background: #22262a;
+    padding: 4px 28px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-inner {
+    position: static;
+   &__title{
+    font-size: 60px;
+    line-height: 100px;
+   }
+  }
 }
