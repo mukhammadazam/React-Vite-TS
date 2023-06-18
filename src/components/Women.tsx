@@ -12,15 +12,19 @@ const Women = () => {
         <div className=' pb-5 women__shop d-flex gap-5'>
           {data.map((el) => (
             <div key={el.id} className='col '>
-              <img
-                className='women__img  '
-                src={el.imgUrl}
-                alt={el.title}
-                height='371'
-              />
-              <p className='women__shop--text pt-3 m-0'>{el.name}</p>
-              <p className='women__shop--title m-0'>{el.title}</p>  
-              <p className='women__shop--title m-0'>{el.noPrice}</p>  
+              <div className=''>
+                <img
+                  className='women__img  '
+                  src={el.imgUrl}
+                  alt={el.title}
+                  height='371'
+                />
+                <p className='women__shop--text pt-3 m-0'>{el.name}</p>
+                <p className='women__shop--title m-0'>{el.title}</p>
+                <p className='women__shop--title   m-0'>
+                  <del>{el.noPrice}</del>
+                </p>
+              </div>
             </div>
           ))}
         </div>
