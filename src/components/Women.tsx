@@ -1,7 +1,13 @@
+import { Link } from "react-router-dom";
+import { AiOutlineHeart } from "react-icons/ai";
 import data from "../db/card.json";
 import "./Women.scss";
-
+import { useState } from "react";
 const Women = () => {
+  const [togle, setTogle] = useState(false);
+  const funcTogle = () => {
+    return setTogle(!togle);
+  };
   return (
     <div className='container'>
       <div className='women'>
@@ -12,18 +18,34 @@ const Women = () => {
         <div className=' pb-5 women__shop d-flex gap-5'>
           {data.map((el) => (
             <div key={el.id} className='col '>
-              <div className=''>
-                <img
-                  className='women__img  '
-                  src={el.imgUrl}
-                  alt={el.title}
-                  height='371'
-                />
-                <p className='women__shop--text pt-3 m-0'>{el.name}</p>
-                <p className='women__shop--title m-0'>{el.title}</p>
-                <p className='women__shop--title   m-0'>
-                  <del>{el.noPrice}</del>
-                </p>
+              <div className='card border border-2  women__carts'>
+                <Link to='' className='position-relative'>
+                  <img
+                    className='women__img   imgs '
+                    src={el.imgUrl}
+                    alt={el.title}
+                    height='371'
+                  />
+                  <Link to='' onClick={funcTogle}>
+                    <AiOutlineHeart
+                      className={`fs-1  position-absolute dark  women__icons ${
+                        !togle ? "dark" : "dark"
+                      }`}
+                    />
+                  </Link>
+                </Link>
+                <p className='women__shop--text ps-3 pt-3 m-0'>{el.name}</p>
+
+                <p className='women__shop--title pt-2 ps-3 m-0'>{el.title}</p>
+                <div className='d-flex align-items-center ps-3 pt-2 justify-content-between pe-5'>
+                  <p className='women__shop--title    m-0'>
+                    <del>${el.noPrice}.00</del>
+                  </p>
+                  <p className='m-0 women__shop--price '>${el.price}.00</p>
+                </div>
+                <button className='btn1 p-1 mt-2 d-block w-100 bg-dark text-light rounded-pill'>
+                  Basket
+                </button>
               </div>
             </div>
           ))}

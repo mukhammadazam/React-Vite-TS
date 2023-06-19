@@ -1,5 +1,5 @@
 .women {
-  padding-top: 113px;
+  padding: 111px 0;
   &__title {
     font-family: "Poppins";
     font-style: normal;
@@ -21,7 +21,7 @@
   &__img {
     max-width: 268px;
     border-radius: 16px;
-      transition: all ease 4s;
+    transition: all ease 4s;
 
     &:hover {
       transform: scale(1.1);
@@ -47,13 +47,32 @@
       line-height: 22px;
       color: #22262a;
     }
+    &--price {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      color: #cf2929;
+    }
+  }
+  &__icons {
+    padding-top: 10px;
+    right: 20px;
+  }
+
+  &__carts {
+    border-radius: 20px;
   }
 }
+  .blue {
+    color: #257291;
+  }
 
 ::-webkit-scrollbar {
   border-radius: 5px;
   width: 5px;
-  height: 5px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-track {
