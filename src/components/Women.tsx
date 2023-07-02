@@ -26,11 +26,9 @@ const Women = () => {
                     alt={el.title}
                     height='371'
                   />
-                  <Link to='' onClick={funcTogle}>
+                  <Link to='' onClick={funcTogle} className={`${!togle ? "dark" :  ""}`}>
                     <AiOutlineHeart
-                      className={`fs-1  position-absolute dark  women__icons ${
-                        !togle ? "dark" : "dark"
-                      }`}
+                      className={`  position-absolute   women__icons `}
                     />
                   </Link>
                 </Link>
