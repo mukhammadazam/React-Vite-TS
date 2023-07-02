@@ -19,19 +19,22 @@ const Women = () => {
           {data.map((el) => (
             <div key={el.id} className='col '>
               <div className='card border border-2  women__carts'>
-                <Link to='' className='position-relative'>
-                  <img
-                    className='women__img   imgs '
-                    src={el.imgUrl}
-                    alt={el.title}
-                    height='371'
+                <div  className='position-relative'>
+                <img
+                  className='women__img   imgs '
+                  src={el.imgUrl}
+                  alt={el.title}
+                  height='371'
+                />
+                <Link
+                  to=''
+                  onClick={funcTogle}
+                  className={`${!togle ? "dark" : ""}`}>
+                  <AiOutlineHeart
+                    className={`  position-absolute   women__icons `}
                   />
-                  <Link to='' onClick={funcTogle} className={`${!togle ? "dark" :  ""}`}>
-                    <AiOutlineHeart
-                      className={`  position-absolute   women__icons `}
-                    />
-                  </Link>
                 </Link>
+                </div>
                 <p className='women__shop--text ps-3 pt-3 m-0'>{el.name}</p>
 
                 <p className='women__shop--title pt-2 ps-3 m-0'>{el.title}</p>

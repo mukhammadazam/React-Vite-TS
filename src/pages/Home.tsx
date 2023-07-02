@@ -1,15 +1,17 @@
-import Hero from "../components/Hero"
-import Section from "../components/Section"
-import Women from "../components/Women"
+import Hero from "../components/Hero";
+import Men from "../components/Men";
+import Section from "../components/Section";
+import Women from "../components/Women";
 
 const Home = () => {
   return (
     <div>
-      <Hero/>
-      <Section/>
-      <Women/>
+      <Hero />
+      <Section />
+      <Women />
+      <Men />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
