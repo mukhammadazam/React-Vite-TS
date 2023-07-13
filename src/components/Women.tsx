@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
-import data from "../db/card.json";
+// import data from "../db/card.json";
 import "./Women.scss";
 import { useEffect, useState } from "react";
 // import axios from "axios";
@@ -59,10 +59,9 @@ const Women: React.FC = () => {
                         height='371'
                       />
                       <Link
-                        to=""
+                        to=''
                         onClick={funcTogle}
-                        className={`${!togle ? "dark" : ""}`}
-                      >
+                        className={`${!togle ? "dark" : ""}`}>
                         <AiOutlineHeart
                           className={`  position-absolute   women__icons `}
                         />
@@ -89,7 +88,7 @@ const Women: React.FC = () => {
         </div>
       ) : (
         <div className='container'>
-          <p>No data found.</p>
+          <h1 className='text-center'></h1>
         </div>
       )}
     </>

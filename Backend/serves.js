@@ -22,7 +22,15 @@ app.get("/women", (req, res) => {
     res.end(error.message);
   }
 });
+app.get("/men",(req,res)=>{
 
+  try {
+    res.end(JSON.stringify(JSON.parse(readFunction("men"))));
+  
+} catch (error) {
+  res.end(error.message);
+}
+})
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
