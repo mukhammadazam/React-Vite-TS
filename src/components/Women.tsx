@@ -1,13 +1,29 @@
-import { Link } from "react-router-dom";
-import { AiOutlineHeart } from "react-icons/ai";
-import data from "../db/card.json";
+// import { Link } from "react-router-dom";
+// import { AiOutlineHeart } from "react-icons/ai";
+// import data from "../db/card.json";
 import "./Women.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Women = () => {
   const [togle, setTogle] = useState(false);
+  const [data, setData] = useState([]);
   const funcTogle = () => {
     return setTogle(!togle);
   };
+  const functionAsc = async () => {
+    try {
+      const response = await axios.get("localhost:3000/women");
+      setData(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+      setData([]);
+    }
+  };
+
+  useEffect(() => {
+    functionAsc();
+  }, []);
   return (
     <div className='container'>
       <div className='women'>
@@ -16,24 +32,24 @@ const Women = () => {
           Shop our new arrivals from established brands
         </p>
         <div className=' pb-5 women__shop d-flex gap-5'>
-          {data.map((el) => (
+          {/* {data.map((el) => (
             <div key={el.id} className='col '>
               <div className='card border border-2  women__carts'>
-                <div  className='position-relative'>
-                <img
-                  className='women__img   imgs '
-                  src={el.imgUrl}
-                  alt={el.title}
-                  height='371'
-                />
-                <Link
-                  to=''
-                  onClick={funcTogle}
-                  className={`${!togle ? "dark" : ""}`}>
-                  <AiOutlineHeart
-                    className={`  position-absolute   women__icons `}
+                <div className='position-relative'>
+                  <img
+                    className='women__img   imgs '
+                    src={el.imgUrl}
+                    alt={el.title}
+                    height='371'
                   />
-                </Link>
+                  <Link
+                    to=''
+                    onClick={funcTogle}
+                    className={`${!togle ? "dark" : ""}`}>
+                    <AiOutlineHeart
+                      className={`  position-absolute   women__icons `}
+                    />
+                  </Link>
                 </div>
                 <p className='women__shop--text ps-3 pt-3 m-0'>{el.name}</p>
 
@@ -49,7 +65,7 @@ const Women = () => {
                 </button>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
