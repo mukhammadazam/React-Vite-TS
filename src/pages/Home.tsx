@@ -1,3 +1,4 @@
+import Avone from "../components/Avone";
 import Hero from "../components/Hero";
 import Men from "../components/Men";
 import Section from "../components/Section";
@@ -10,6 +11,7 @@ const Home = () => {
       <Section />
       <Women />
       <Men />
+      <Avone/>
     </div>
   );
 };
