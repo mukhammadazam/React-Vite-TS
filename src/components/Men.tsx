@@ -8,7 +8,6 @@ const Men = () => {
   const funcTogle = () => {
     return setTogle(!togle);
   };
-  console.log(data);
   return (
     <div className='container'>
       <h4 className='women__title text-center pb-3'>MEN’S FASHION</h4>

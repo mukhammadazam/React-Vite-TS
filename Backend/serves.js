@@ -1,23 +1,28 @@
 const express = require("express");
+const cors = require("cors");
 const readFunction = require("./module/module.js");
 
 const app = express();
 app.use(express.json());
-// app.use(cors)
+
+app.use(cors());
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// });
+
 app.get("/women", (req, res) => {
   try {
-    res.status(204).end("Welcome to Api");
     res.end(JSON.stringify(JSON.parse(readFunction("card"))));
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-    res.setHeader(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
   } catch (error) {
     res.end(error.message);
   }
 });
+
 app.listen(3000, () => {
-  console.log("server running 3000");
+  console.log("Server running on port 3000");
 });
