@@ -1,4 +1,45 @@
-.tachen{
- background-color: #c4c4c4;
+.tachen {
+  background-image: url(../../public/Avone/tachen.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: center;
+  padding-top: 440px  ;
+  padding-bottom: 125px;
+  margin-top: 120px;
+  &__text {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__title {
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__btn {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    background-color: #22262a;
+    border: none;
+    padding: 11px 26px;
+  }
+}
 
+@media screen and (max-width:576px){
+    .tachen{
+        &__title{
+            font-size: 60px;
+        }
+    }
 }

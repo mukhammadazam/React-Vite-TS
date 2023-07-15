@@ -38,7 +38,7 @@ const Avone = () => {
                       className='w-100 card imgs'
                       src={el.imgUrl}
                       alt=''
-                      height={270}
+                      height={275}
                     />
                     <img className='position-absolute img' src={bg} alt='' />
                   </Link>
@@ -53,7 +53,7 @@ const Avone = () => {
                       className='w-100 imgs rounded'
                       src={el.imgUrl}
                       alt=''
-                      height={270}
+                      height={275}
                     />
                     <img className='position-absolute img' src={bg} alt='' />
                   </Link>

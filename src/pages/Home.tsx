@@ -2,6 +2,7 @@ import Avone from "../components/Avone";
 import Hero from "../components/Hero";
 import Men from "../components/Men";
 import Section from "../components/Section";
+import Tachen from "../components/Tachen";
 import Women from "../components/Women";
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
       <Section />
       <Women />
       <Men />
-      <Avone/>
+      <Avone />
+      <Tachen />
     </div>
   );
 };
