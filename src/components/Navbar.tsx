@@ -1,13 +1,14 @@
 import { Nav, Navbar as NavbarBs, Button, Container } from "react-bootstrap";
 import { BsHeart, BsCartPlus } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { MyContext } from "../context/Context";
 import { NavLink } from "react-router-dom";
 import { ImSearch } from "react-icons/im";
 import logo from "../assets/LOGO.svg";
-import { useState } from "react";
+import { useContext } from "react";
 import "./Navbar.scss";
 const Navbar = () => {
-  const [togle, setTogle] = useState(false);
+  const { togle, setTogle } = useContext(MyContext);
   const funcTogle = () => {
     return setTogle(!togle);
   };
@@ -65,33 +66,39 @@ const Navbar = () => {
           <div className='position-absolute nav__togle  '>
             <div className='nav__list togleList  d-block '>
               <NavLink
+                onClick={funcTogle}
                 className='text-decoration-none togleList d-block nav__link'
                 to='/'>
                 HOME
               </NavLink>
 
               <NavLink
+                onClick={funcTogle}
                 className='text-decoration-none togleList d-block nav__link'
                 to='/shop'>
                 SHOP
               </NavLink>
 
               <NavLink
+                onClick={funcTogle}
                 className='text-decoration-none togleList d-block nav__link'
                 to='lookbood'>
                 LOOKBOOK
               </NavLink>
               <NavLink
+                onClick={funcTogle}
                 className='text-decoration-none togleList d-block nav__link'
                 to='features'>
                 FEATURES
               </NavLink>
               <NavLink
+                onClick={funcTogle}
                 className='text-decoration-none togleList d-block nav__link'
                 to='pages'>
                 PAGES
               </NavLink>
               <NavLink
+                onClick={funcTogle}
                 className='text-decoration-none togleList d-block nav__link'
                 to='blog'>
                 BLOG
