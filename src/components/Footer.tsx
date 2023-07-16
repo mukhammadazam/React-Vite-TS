@@ -30,19 +30,34 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className='fBottom'>
+      <div className='fBottom pb-5 d-lg-flex  align-items-lg-center justify-content-lg-between'>
         <div className='fBottom__left'>
-          <p className='fBottom__left--text d-flex align-items-center '>
+          <p className='fBottom__left--text  '>
             <DiGoogleCloudPlatform className='pe-2 fs-4' />
             location Comilla, Bangladesh 3500
           </p>
           <Link
             to='kawsarahmed0210@gmail.com'
-            className='fBottom__left--text text-dark'>
+            className='fBottom__left--text d-block text-dark'>
             kawsarahmed0210@gmail.com
           </Link>
-          <p className='pt-0'>01647470457</p>
+          <p className='pt-0 '>01647470457</p>
+          <div className='d-flex align-items-center '>
+            <Link to='' className='text-center d-block'>
+              <BsFacebook className='fs-2 pe-2 text-dark' />
+            </Link>
+            <Link to='' className='text-center d-block'>
+              <FaInstagram className='fs-2 pe-2 text-dark' />
+            </Link>
+            <Link to='' className='text-center d-block'>
+              <FaTwitter className='fs-2 pe-2 text-dark' />
+            </Link>
+            <Link to='' className='text-center d-block'>
+              <AiFillLinkedin className='fs-3 text-dark' />
+            </Link>
+          </div>
         </div>
+        <p className="coll pt-lg-0 pt-5">Copyright © 2020 . Your company name All rights reserved</p>
       </div>
     </div>
   );

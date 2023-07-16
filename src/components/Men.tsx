@@ -75,7 +75,7 @@ const Men: React.FC = () => {
           </div>
         </div>
       ) : (
-        <h1 className="text-center">"Server xato bor"</h1>
+        <h1 className="text-center ">Server xato bor</h1>
       )}
     </div>
   );

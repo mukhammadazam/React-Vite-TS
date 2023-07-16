@@ -1,7 +1,10 @@
+import SHopOne from "../components/SHopOne"
 
 const SHop = () => {
   return (
-    <div>SHop</div>
+    <div>
+      <SHopOne/>
+    </div>
   )
 }
 
