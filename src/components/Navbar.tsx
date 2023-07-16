@@ -12,9 +12,9 @@ const Navbar = () => {
     return setTogle(!togle);
   };
   return (
-    <NavbarBs className="navBs" sticky="top">
+    <NavbarBs className='navBs' sticky='top'>
       <Container>
-        <Nav  className='nav d-flex align-items-center justify-content-between w-100'>
+        <Nav className='nav d-flex align-items-center justify-content-between w-100'>
           <div className='nav__logo'>
             <NavLink to='/'>
               <img src={logo} alt='logo' width='164' height='42' />
@@ -62,30 +62,42 @@ const Navbar = () => {
           </div>
         </Nav>
         {togle ? (
-          <div className='position-absolute nav__togle '>
-            <div className='nav__list   d-block '>
-              <NavLink className='text-decoration-none d-block nav__link' to='/'>
+          <div className='position-absolute nav__togle  '>
+            <div className='nav__list togleList  d-block '>
+              <NavLink
+                className='text-decoration-none togleList d-block nav__link'
+                to='/'>
                 HOME
               </NavLink>
 
-              <NavLink className='text-decoration-none d-block nav__link' to='/shop'>
+              <NavLink
+                className='text-decoration-none togleList d-block nav__link'
+                to='/shop'>
                 SHOP
               </NavLink>
 
-              <NavLink className='text-decoration-none d-block nav__link' to='lookbood'>
+              <NavLink
+                className='text-decoration-none togleList d-block nav__link'
+                to='lookbood'>
                 LOOKBOOK
               </NavLink>
-              <NavLink className='text-decoration-none d-block nav__link' to='features'>
+              <NavLink
+                className='text-decoration-none togleList d-block nav__link'
+                to='features'>
                 FEATURES
               </NavLink>
-              <NavLink className='text-decoration-none d-block nav__link' to='pages'>
+              <NavLink
+                className='text-decoration-none togleList d-block nav__link'
+                to='pages'>
                 PAGES
               </NavLink>
-              <NavLink className='text-decoration-none d-block nav__link' to='blog'>
+              <NavLink
+                className='text-decoration-none togleList d-block nav__link'
+                to='blog'>
                 BLOG
               </NavLink>
             </div>
-            <div className=' nav__mobileLogos   align-items-center  justify-content-center'>
+            <div className=' nav__mobileLogos  togleList__active  align-items-center  justify-content-center'>
               <Button className='bg-light me-3  border-0 d-block'>
                 <ImSearch className='text-dark fs-3' />
               </Button>
