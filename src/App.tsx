@@ -7,6 +7,7 @@ import LookBook from "./pages/LookBook";
 import Pages from "./pages/Pages";
 import SHop from "./pages/SHop";
 import "./App.css";
+import Search from "./components/Search";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/LookBook' element={<LookBook />} />
         <Route path='/Fuatures' element={<Fuatures />} />
         <Route path='/Pages' element={<Pages />} />
+        <Route path='/search' element={<Search />} />
       </Routes>
       <Footer />
     </>
