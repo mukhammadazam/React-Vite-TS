@@ -7,6 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &__input {
+    top: 200px;
+    max-width: 300px;
+    width: 100%;
+    padding: 5px 10px;
+    color:#333;
+    border: 2px solid #333;
+    outline: none;
+  }
 }
 .hero-inner {
   position: absolute;
@@ -50,9 +59,9 @@
 @media screen and (max-width: 768px) {
   .hero-inner {
     position: static;
-   &__title{
-    font-size: 60px;
-    line-height: 100px;
-   }
+    &__title {
+      font-size: 60px;
+      line-height: 100px;
+    }
   }
 }

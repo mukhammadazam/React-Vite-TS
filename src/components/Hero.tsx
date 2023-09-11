@@ -7,6 +7,7 @@ const Hero = () => {
   };
   return (
     <div className='hero'>
+      {/* <input type="text" className=" position-absolute hero__input rounded " /> */}
       <div className='hero-inner'>
         <span className='hero-inner__leni text-center d-block text-sm-start'>
           NEW TREND

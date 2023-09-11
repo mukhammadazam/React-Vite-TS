@@ -105,7 +105,9 @@ const Navbar = () => {
               </NavLink>
             </div>
             <div className=' nav__mobileLogos  togleList__active  align-items-center  justify-content-center'>
-              <Button className='bg-light me-3  border-0 d-block'>
+              <Button
+                onClick={funcTogle}
+                className='bg-light me-3  border-0 d-block'>
                 <ImSearch className='text-dark fs-3' />
               </Button>
               <Button className='bg-light me-3 border-0  d-block'>
