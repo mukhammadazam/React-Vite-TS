@@ -168,6 +168,10 @@ const SHopOne = () => {
           </div>
         </div>
       </div>
+      {/* Partner stores */}
+      <div className='container'>
+
+      </div>
     </>
   );
 };

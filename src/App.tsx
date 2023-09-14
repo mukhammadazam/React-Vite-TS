@@ -9,6 +9,7 @@ import SHop from "./pages/SHop";
 import "./App.css";
 import Search from "./components/Search";
 import LearMore from "./components/LearMore";
+import Carousel from "./components/Corusel";
 function App() {
   return (
     <>
@@ -20,7 +21,8 @@ function App() {
         <Route path='/Fuatures' element={<Fuatures />} />
         <Route path='/Pages' element={<Pages />} />
         <Route path='/search' element={<Search />} />
-        <Route path="/LearMore" element={<LearMore/>}/>
+        <Route path='/LearMore' element={<LearMore />} />
+        <Route path='/Corusel' element={<Carousel/>} />
       </Routes>
       <Footer />
     </>
