@@ -2,6 +2,12 @@ import heroImg from "../../public/shopImg/shop-hero.png";
 import logo1 from "../../public/shopImg/logo1.svg";
 import logo2 from "../../public/shopImg/logo2.svg";
 import logo3 from "../../public/shopImg/logo3.svg";
+import pay1 from "../../public/shopImg/pay1.png";
+import pay2 from "../../public/shopImg/pay2.png";
+import pay3 from "../../public/shopImg/pay3.png";
+import pay4 from "../../public/shopImg/pay4.png";
+import { Link } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./ShopOne.scss";
@@ -44,6 +50,7 @@ const SHopOne = () => {
           </div>
         </div>
       </div>
+      {/*  SHOPONE ROW CARD. ==========>>>>>>>> */}
       <div className='container'>
         <div className='row shopOne__row '>
           <div className='col-lg-4 shopOne__row--col col-sm-4 pb-5 pb-md-0  d-flex justify-content-center'>
@@ -92,6 +99,71 @@ const SHopOne = () => {
                 Split your payments and manage purchases, with a smart spending
                 overview and more.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*  PAY with Klarna. ==========>>>>>>>>*/}
+      <div className='container'>
+        <div className='pay'>
+          <p className='pay__title'>Pay with Klarna.</p>
+          <div className='row '>
+            <div className='col-12 coll   col-md-12  col-lg-4 pay__row--col   d-flex justify-content-center pb-5 pb-lg-0'>
+              <div className=''>
+                <img
+                  className='pay__row--img w-100'
+                  src={pay1}
+                  alt='pay'
+                  width={267}
+                />
+                <p className='pay__row--title'>Flex your payments</p>
+                <p className='pay__row--text'>
+                  Enjoy the flexibility to shop what you love and split your
+                  purchase into 4 interest-free payments. No credit impact to
+                  apply.
+                </p>
+                <Link to='/LearMore' className='pay__row--btn'>
+                  Learn more <BsArrowRight className='text-dark  fs-3' />
+                </Link>
+              </div>
+            </div>
+            <div className='col-12 col-md-12 coll    col-lg-4 pay__row--col   d-flex justify-content-center pb-5 pb-lg-0'>
+              <div className=''>
+                <img
+                  className='pay__row--img w-100'
+                  src={pay2}
+                  alt='pay'
+                  width={267}
+                />
+                <p className='pay__row--title'>Never miss a payment</p>
+                <p className='pay__row--text'>
+                  Get more time to pay when you need it. Extend your due date
+                  easily in the app. Report returns in the app and we'll pause
+                  your payments.
+                </p>
+                <Link to='/LearMore' className='pay__row--btn'>
+                  Learn more <BsArrowRight className='text-dark  fs-3' />
+                </Link>
+              </div>
+            </div>
+            <div className='col-12 col-md-12   col-lg-4  pay__row--col  d-flex justify-content-center pb-5 pb-lg-0'>
+              <div className=''>
+                <img
+                  className='pay__row--img w-100'
+                  src={pay3}
+                  alt='pay'
+                  width={267}
+                />
+                <p className='pay__row--title'>Pay wherever, whenever</p>
+                <p className='pay__row--text'>
+                  Pay however you like, wherever you want to shop—and do it
+                  directly from your desktop, phone or in-store.
+                </p>
+                <Link to='/LearMore' className='pay__row--btn'>
+                  Learn more
+                  <BsArrowRight className='text-dark   fs-3' />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

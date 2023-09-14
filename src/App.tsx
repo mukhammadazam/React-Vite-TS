@@ -8,6 +8,7 @@ import Pages from "./pages/Pages";
 import SHop from "./pages/SHop";
 import "./App.css";
 import Search from "./components/Search";
+import LearMore from "./components/LearMore";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path='/Fuatures' element={<Fuatures />} />
         <Route path='/Pages' element={<Pages />} />
         <Route path='/search' element={<Search />} />
+        <Route path="/LearMore" element={<LearMore/>}/>
       </Routes>
       <Footer />
     </>
