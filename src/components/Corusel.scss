@@ -1,0 +1,49 @@
+.Card {
+  background-color: #0e0e0f;
+  padding: 80px 0;
+  &__leni {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  &__title {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    max-width: 416px;
+    width: 100%;
+    padding: 16px 0;
+  }
+  &__text {
+    max-width: 424px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    padding-bottom: 28px;
+  }
+  &__link {
+    background-color: #ffb3c7;
+    width: 125px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px 0;
+    color: #171717;
+  }
+}

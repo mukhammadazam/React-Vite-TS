@@ -170,7 +170,10 @@ const SHopOne = () => {
         </div>
       </div>
       {/* Partner stores */}
+      <div className="py-5">
       <Corusel />
+
+      </div>
     </>
   );
 };
