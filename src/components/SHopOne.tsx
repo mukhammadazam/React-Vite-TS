@@ -11,6 +11,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./ShopOne.scss";
+import Corusel from "./Corusel";
 const SHopOne = () => {
   const [data, setData] = useState([]);
 
@@ -169,9 +170,7 @@ const SHopOne = () => {
         </div>
       </div>
       {/* Partner stores */}
-      <div className='container'>
-
-      </div>
+      <Corusel />
     </>
   );
 };
