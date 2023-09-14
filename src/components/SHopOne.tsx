@@ -46,28 +46,52 @@ const SHopOne = () => {
       </div>
       <div className='container'>
         <div className='row shopOne__row '>
-          <div className='col-lg-4  col-sm-4 pb-5 pb-sm-0  d-flex justify-content-center'>
+          <div className='col-lg-4 shopOne__row--col col-sm-4 pb-5 pb-md-0  d-flex justify-content-center'>
             <div className=''>
-              <img   className="d-block text-center" src={logo1} alt='logo' />
+              <img
+                className='d-block shopOne__row--img'
+                src={logo1}
+                alt='logo'
+              />
               <strong className='shopOne__row--title '>
                 Shop what you love
               </strong>
+              <p className='shopOne__row--text'>
+                Find new products and brands. Get the best deal and earn
+                rewards—just for shopping.
+              </p>
             </div>
           </div>
-          <div className='col-lg-4  col-sm-4 pb-5 pb-sm-0  d-flex justify-content-center'>
+          <div className='col-lg-4 shopOne__row--col col-sm-4 pb-5 pb-md-0  d-flex justify-content-center'>
             <div className=''>
-              <img   className="d-block text-center" src={logo3} alt='djfy' />
+              <img
+                className='d-block shopOne__row--img'
+                src={logo2}
+                alt='djfy'
+              />
+              <strong className='shopOne__row--title text-center'>
+                Pay how you like
+              </strong>
+              <p className='shopOne__row--text'>
+                Choose how you pay at partner stores, via our app, Klarna Card
+                or browser extension.
+              </p>
+            </div>
+          </div>
+          <div className='col-lg-4 shopOne__row--col col-sm-4   d-flex justify-content-center'>
+            <div className=''>
+              <img
+                className='d-block shopOne__row--img'
+                src={logo3}
+                alt='dsf'
+              />
               <strong className='shopOne__row--title '>
-                Shop what you love
+                Manage your budget
               </strong>
-            </div>
-          </div>
-          <div className='col-lg-4  col-sm-4   d-flex justify-content-center'>
-            <div className=''>
-              <img  className="d-block text-center"  src={logo3} alt='dsf' />
-              <strong className='shopOne__row--titler'>
-                Shop what you love
-              </strong>
+              <p className='shopOne__row--text'>
+                Split your payments and manage purchases, with a smart spending
+                overview and more.
+              </p>
             </div>
           </div>
         </div>
