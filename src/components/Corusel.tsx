@@ -21,8 +21,8 @@ const Corusel = () => {
               </Link>
             </div>
           </CarouselItem>
-          <CarouselItem>
-            <div className=''>
+          <CarouselItem className="row">
+            <div className='col-12 col-lg-6'>
               <span className='Card__leni d-block'>Klarna Card</span>
               <p className='Card__title'>Pay anywhere that accepts Visa.</p>
               <p className='Card__text'>
@@ -33,6 +33,9 @@ const Corusel = () => {
               <Link className='d-block Card__link text-decoration-none ' to='/'>
                 Lear More
               </Link>
+            </div>
+            <div className="col-12 col-lg-6">
+
             </div>
           </CarouselItem>
         </Carousel>
