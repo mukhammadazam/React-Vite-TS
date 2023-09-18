@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./ShopOne.scss";
 import Corusel from "./Corusel";
+import Trend from "./Trend";
 const SHopOne = () => {
   const [data, setData] = useState([]);
 
@@ -169,9 +170,11 @@ const SHopOne = () => {
         </div>
       </div>
       {/* Partner stores */}
-      <div className="py-5">
-      <Corusel />
-
+      <div className='py-5'>
+        <Corusel />
+      </div>
+      <div className='py-5'>
+        <Trend />
       </div>
     </>
   );

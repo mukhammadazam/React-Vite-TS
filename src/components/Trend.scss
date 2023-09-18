@@ -1,0 +1,32 @@
+.trend {
+  &__title {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: 0em;
+    color: #000;
+  }
+  &__text {
+    max-width: 423px;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #171717;
+  }
+  &__link {
+    background-color: #17120f;
+    border: 1px solid #17120f;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding: 5px 0;
+    color: #fff;
+    width: 166px;
+  }
+}

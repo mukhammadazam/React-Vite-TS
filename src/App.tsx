@@ -10,6 +10,7 @@ import "./App.css";
 import Search from "./components/Search";
 import LearMore from "./components/LearMore";
 import Carousel from "./components/Corusel";
+import Trend from "./components/Trend";
 function App() {
   return (
     <>
@@ -22,7 +23,8 @@ function App() {
         <Route path='/Pages' element={<Pages />} />
         <Route path='/search' element={<Search />} />
         <Route path='/LearMore' element={<LearMore />} />
-        <Route path='/Corusel' element={<Carousel/>} />
+        <Route path='/Corusel' element={<Carousel />} />
+        <Route path='/Trend' element={<Trend />} />
       </Routes>
       <Footer />
     </>
