@@ -7,7 +7,6 @@ app.use(express.json());
 
 app.use(cors());
 
-
 app.get("/women", (req, res) => {
   try {
     res.end(JSON.stringify(JSON.parse(readFunction("card"))));
@@ -15,15 +14,20 @@ app.get("/women", (req, res) => {
     res.end(error.message);
   }
 });
-app.get("/men",(req,res)=>{
-
+app.get("/men", (req, res) => {
   try {
     res.end(JSON.stringify(JSON.parse(readFunction("men"))));
-  
-} catch (error) {
-  res.end(error.message);
-}
-})
+  } catch (error) {
+    res.end(error.message);
+  }
+});
+app.get("/search", (req, res) => {
+  try {
+    res.end(JSON.stringify(JSON.parse(readFunction("search"))));
+  } catch (error) {
+    res.end(error.message);
+  }
+});
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
