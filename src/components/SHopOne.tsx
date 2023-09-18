@@ -5,7 +5,6 @@ import logo3 from "../../public/shopImg/logo3.svg";
 import pay1 from "../../public/shopImg/pay1.png";
 import pay2 from "../../public/shopImg/pay2.png";
 import pay3 from "../../public/shopImg/pay3.png";
-import pay4 from "../../public/shopImg/pay4.png";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { useEffect, useState } from "react";

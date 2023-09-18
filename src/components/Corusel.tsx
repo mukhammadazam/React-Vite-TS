@@ -21,7 +21,7 @@ const Corusel = () => {
                   </p>
                   <Link
                     className='d-block Card__link text-decoration-none '
-                    to='/'>
+                    to='/LearMore'>
                     Lear More
                   </Link>
                 </div>
@@ -43,8 +43,8 @@ const Corusel = () => {
                     be affected when you apply for or use the Klarna Card.
                   </p>
                   <Link
-                    className='d-block Card__link text-decoration-none '
-                    to='/'>
+                    to='/LearMore'
+                    className='d-block Card__link text-decoration-none '>
                     Lear More
                   </Link>
                 </div>
