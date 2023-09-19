@@ -11,6 +11,7 @@ import Search from "./components/Search";
 import LearMore from "./components/LearMore";
 import Carousel from "./components/Corusel";
 import Trend from "./components/Trend";
+import CardDetail from "./components/CardDetail";
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
         <Route path='/LearMore' element={<LearMore />} />
         <Route path='/Corusel' element={<Carousel />} />
         <Route path='/Trend' element={<Trend />} />
+        <Route path='/cards/:cardId' element={<CardDetail />} />
       </Routes>
       <Footer />
     </>
