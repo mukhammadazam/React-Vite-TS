@@ -12,22 +12,19 @@ import axios from "axios";
 import "./ShopOne.scss";
 import Corusel from "./Corusel";
 import Trend from "./Trend";
+type DataItem = {
+  imgUrl1: string;
+  title:string;
+  text:string;
+};
 const SHopOne = () => {
   const [data, setData] = useState([]);
 
-  const options = {
-    method: "GET",
-    url: "https://watchsignals.p.rapidapi.com/watch/referencenumber/11088",
-    headers: {
-      "X-RapidAPI-Key": "5401697795msh4c9903c5ca8b1acp1d16c6jsn9312395fea1e",
-      "X-RapidAPI-Host": "watchsignals.p.rapidapi.com",
-    },
-  };
-
   const getFunction = async () => {
     try {
-      const response = await axios.request(options);
+      const response = await axios("http://localhost:3000/search");
       console.log(response.data);
+      setData(response.data);
     } catch (error) {
       console.error(error);
     }
@@ -109,64 +106,29 @@ const SHopOne = () => {
         <div className='pay'>
           <p className='pay__title'>Pay with Klarna.</p>
           <div className='row '>
-            <div className='col-12 coll   col-md-12  col-lg-4 pay__row--col   d-flex justify-content-center pb-5 pb-lg-0'>
-              <div className=''>
-                <img
-                  className='pay__row--img w-100'
-                  src={pay1}
-                  alt='pay'
-                  width={267}
-                />
-                <p className='pay__row--title'>Flex your payments</p>
-                <p className='pay__row--text'>
-                  Enjoy the flexibility to shop what you love and split your
-                  purchase into 4 interest-free payments. No credit impact to
-                  apply.
-                </p>
-                <Link to='/LearMore' className='pay__row--btn'>
-                  Learn more <BsArrowRight className='text-dark  fs-3' />
-                </Link>
+            {data.map((el: DataItem, index) => (
+              <div
+                key={index}
+                className='col-12 coll   col-md-12  col-lg-4 pay__row--col   d-flex justify-content-center pb-5 pb-lg-0'>
+                <div className=''>
+                  <img
+                    className='pay__row--img w-100'
+                    src={el.imgUrl1}
+                    alt='pay'
+                    width={267}
+                  />
+                  <p className='pay__row--title'>{el.title}</p>
+                  <p className='pay__row--text'>
+                  {el.text}
+                  </p>
+                  <Link to='/LearMore' className='pay__row--btn'>
+                    Learn more <BsArrowRight className='text-dark  fs-3' />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className='col-12 col-md-12 coll    col-lg-4 pay__row--col   d-flex justify-content-center pb-5 pb-lg-0'>
-              <div className=''>
-                <img
-                  className='pay__row--img w-100'
-                  src={pay2}
-                  alt='pay'
-                  width={267}
-                />
-                <p className='pay__row--title'>Never miss a payment</p>
-                <p className='pay__row--text'>
-                  Get more time to pay when you need it. Extend your due date
-                  easily in the app. Report returns in the app and we'll pause
-                  your payments.
-                </p>
-                <Link to='/LearMore' className='pay__row--btn'>
-                  Learn more <BsArrowRight className='text-dark  fs-3' />
-                </Link>
-              </div>
-            </div>
-            <div className='col-12 col-md-12   col-lg-4  pay__row--col  d-flex justify-content-center pb-5 pb-lg-0'>
-              <div className=''>
-                <img
-                  className='pay__row--img w-100'
-                  src={pay3}
-                  alt='pay'
-                  width={267}
-                />
-                <p className='pay__row--title'>Pay wherever, whenever</p>
-                <p className='pay__row--text'>
-                  Pay however you like, wherever you want to shop—and do it
-                  directly from your desktop, phone or in-store.
-                </p>
-                <Link to='/LearMore' className='pay__row--btn'>
-                  Learn more
-                  <BsArrowRight className='text-dark   fs-3' />
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
+    
         </div>
       </div>
       {/* Partner stores */}

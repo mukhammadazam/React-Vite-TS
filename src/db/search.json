@@ -3,18 +3,18 @@
     "id": 1,
     "title": "Flex your payments",
     "text": "Enjoy the flexibility to shop what you love and split your purchase into 4 interest-free payments. No credit impact to apply.",
-    "imgUrl": "/shopImg/pay1.png"
+    "imgUrl1": "/shopImg/pay1.png"
   },
   {
     "id": 2,
     "title": "Never miss a payment",
     "text": "Get more time to pay when you need it. Extend your due date easily in the app. Report returns in the app and we'll pause your payments.",
-    "imgUrl": "/shopImg/pay2.png"
+    "imgUrl1": "/shopImg/pay2.png"
   },
   {
     "id": 3,
     "title": "Pay wherever, whenever",
     "text": "Pay however you like, wherever you want to shop—and do it directly from your desktop, phone or in-store.",
-    "imgUrl": "/shopImg/pay3.png"
+    "imgUrl1": "/shopImg/pay3.png"
   }
 ]
