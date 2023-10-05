@@ -11,7 +11,7 @@ import Search from "./components/Search";
 import LearMore from "./components/LearMore";
 import Carousel from "./components/Corusel";
 import Trend from "./components/Trend";
-import CardDetail from "./components/CardDetail";
+// import UseParams from "./components/UseParams";
 function App() {
   return (
     <>
@@ -26,7 +26,7 @@ function App() {
         <Route path='/LearMore' element={<LearMore />} />
         <Route path='/Corusel' element={<Carousel />} />
         <Route path='/Trend' element={<Trend />} />
-        <Route path='/cards/:cardId' element={<CardDetail />} />
+        {/* <Route path={`/:id`} element={<UseParams />} /> */}
       </Routes>
       <Footer />
     </>

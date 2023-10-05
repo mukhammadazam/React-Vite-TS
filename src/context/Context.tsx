@@ -5,7 +5,6 @@ import {
   SetStateAction,
   Dispatch,
 } from "react";
-
 interface MyContextType {
   togle: boolean;
   setTogle: Dispatch<SetStateAction<boolean>>;
